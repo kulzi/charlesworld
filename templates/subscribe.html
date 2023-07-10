@@ -36,7 +36,7 @@
 <section id="navigation-bar">
   <nav class="navbar navbar-expand-lg navbar-light">
      <div class="container-fluid">
-       <a class="world">charlie<span class="apostrophe">'</span>s world</a>
+       <a class="world" href="{{url_for('home')}}">charlie<span class="apostrophe">'</span>s world</a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -80,19 +80,19 @@
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...read a poem?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="{{url_for('poems')}}">...read a poem?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...continue on my novel: the denims?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="{{url_for('chapters')}}">...continue on my novel: the denims?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...or maybe read an artcile?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="{{url_for('articles')}}">...or maybe read an artcile?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...perhaps in the mood for some short stories?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="{{url_for('stories')}}">...perhaps in the mood for some short stories?</a></button>
     </div>
     <div class="carousel-item subscribe">
-      <button type="button" name="button" class="bottom-button"><a href="subscribe.html">...or maybe subscribe to my newsletter to stay updated</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="{{url_for('subscribe')}}">...or maybe subscribe to my newsletter to stay updated</a></button>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
