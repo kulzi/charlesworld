@@ -62,6 +62,12 @@ body
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.world:hover
+{
+  text-decoration:none;
+  color:black;
+
+}
 .apostrophe
 {
   color:orange;
@@ -212,21 +218,22 @@ body
   font-family: 'Monomaniac One', sans-serif;  color: black;
   text-transform:uppercase;
   text-align:center;
-
   border:none;
 }
 .comment-section input,
 {
-  padding:5px 15px;
   width:80%;
+  padding-left:10px;
+
 }
 .comment-section button
 {
   padding:1px 40px;
-  border:2px solid black;
-  background:transparent;
   color:black;
   cursor:pointer;
+  background: none;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .comment-section button:hover
 {
@@ -254,7 +261,7 @@ body
    margin-bottom:10px;
 
  }
- .sub-box input::placeholder
+ .sub-box input::placeholder, .comment-section input::placeholder
  {
    color:orange;
  }
