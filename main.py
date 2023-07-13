@@ -91,5 +91,16 @@ def poem3():
     return render_template('poem3.html')
 
 
+@app.route('/poem4', methods=["POST", "GET"])
+def poem4():
+    if request.method == "POST":
+        user_comment = request.form["comm"]
+        with smtplib.SMTP_SSL("smtp.mail.yahoo.com", 465) as connection:
+            connection.login(user=user_mail, password=password)
+            connection.sendmail(from_addr=user_mail, to_addrs=sent_mail, msg=f"Subject:subscription\n\nemail:{user_comment}")
+        return render_template('poem4.html')
+    return render_template('poem4.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
