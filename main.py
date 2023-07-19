@@ -102,5 +102,27 @@ def poem4():
     return render_template('poem4.html')
 
 
+@app.route('/poem5', methods=["POST", "GET"])
+def poem5():
+    if request.method == "POST":
+        user_comment = request.form["comm"]
+        with smtplib.SMTP_SSL("smtp.mail.yahoo.com", 465) as connection:
+            connection.login(user=user_mail, password=password)
+            connection.sendmail(from_addr=user_mail, to_addrs=sent_mail, msg=f"Subject:subscription\n\nemail:{user_comment}")
+        return render_template('poem5.html')
+    return render_template('poem5.html')
+
+
+@app.route('/poem6', methods=["POST", "GET"])
+def poem6():
+    if request.method == "POST":
+        user_comment = request.form["comm"]
+        with smtplib.SMTP_SSL("smtp.mail.yahoo.com", 465) as connection:
+            connection.login(user=user_mail, password=password)
+            connection.sendmail(from_addr=user_mail, to_addrs=sent_mail, msg=f"Subject:subscription\n\nemail:{user_comment}")
+        return render_template('poem6.html')
+    return render_template('poem6.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)

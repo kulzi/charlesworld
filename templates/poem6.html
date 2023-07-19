@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://kit.fontawesome.com/abb5e70d30.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="static/css/style.css">
+
 </head>
 
   <body>
@@ -66,86 +67,80 @@
 </section>
 <!--beneath subscription-->
 <div class="each-poem">
-  <h1>it begins</h1>
-And then three...two...one.<br>
-It begins. It commences. The curtains unveil me.<br>
-There I stand, as glorious as the sun at 8 pm.<br>
-There I stand, my eyes on fire, my feet about a foot off the ground, and my mind, as clear as ever.<br>
-I know this next step is everything. I know my next move is my destiny.<br><div class="read-more">
-  <a href="{{url_for('poem1')}}" class="read-more">read more...</a>
-</div>
-</div>
-
-<div class="each-poem">
-  <h1>part</h1>
-  Our love is much better when we’re apart.<br>
-Whenever we are far from each other, that’s when we know how to play our parts.<br>
-Perhaps it’s simply a part of who we are or partly because we’re both broken and hoping we’ll heal each other’s scars.<br><br>
-
-<div class="read-more">
-  <a href="{{url_for('poem2')}}" class="read-more">read more...</a>
-</div>
-</div>
-<div class="each-poem">
-  <h1>say something</h1>
-And this time…this time I’m in front of the door, heart prepared, knife in hand, ready for war.<br>
-I open the door slowly…and as its hinges make that annoying sound my knife falls to the ground.<br>
-And I’m trapped in between the line that separates the lost and the found.<br>
-My hands rub my eyes, I blink once, twice, lies…lies…lies!!! <br>
-But it’s true….standing before me is you.
-<div class="read-more">
-  <a href="{{url_for('poem3')}}" class="read-more">read more...</a>
-</div>
-</div>
-<div class="each-poem">
-  <h1>Powerless</h1>
-Go ahead then...<br>
-Go ahead and do with me as you, please,<br>
-for I have become a skit for your endless tease.<br>
-For I, once a tornado, have become a light breeze.<br>
-I, once a star, am now one of the nobodies. <br>
-I, once the head, have been brought down on my knees.<br>
-<div class="read-more">
-  <a href="{{url_for('poem4')}}" class="read-more">read more...</a>
-</div>
-</div><div class="each-poem">
-  <h1>love</h1>
-Even more ridiculous is the fact that you're no different.<br>
-So stop the petty pretense.<br>
-I see how you act all fancy around me like a princess.<br>
-I see how your eyes light up when I'm present.<br>
-And honestly, if you had a hair plucked out for every time I caught you looking my way, you'd be bald.<br>
-For I can tell that your want for me is over and beyond.<br>
-<div class="read-more">
-  <a href="{{url_for('poem5')}}" class="read-more">read more...</a>
-</div>
-</div>
-<div class="each-poem">
   <h1>My hair and my eye</h1>
-Go ahead then...<br>
-Go ahead and do with me as you, please,<br>
-for I have become a skit for your endless tease.<br>
-For I, once a tornado, have become a light breeze.<br>
-I, once a star, am now one of the nobodies. <br>
-I, once the head, have been brought down on my knees.<br>
-<div class="read-more">
-  <a href="{{url_for('poem6')}}" class="read-more">read more...</a>
+I’m sorry.<br>
+Heartily, sorry.<br>
+I probably do owe you an apology.<br>
+I lied…I didn’t mean to but I did.<br>
+I misled you…I told you I had never been scared and had no fears…but that was a lie.<br>
+I’ve always been scared of people knowing who I am…who I truly am.<br>
+And I wish I could say, “I don’t give a damn”, but I do…I really do.<br>
+My hair…<br>
+I’ve always been scared of being an open book.<br>
+Because I wasn’t sure if anyone would see me once and dare to have another look.<br>
+My eye...<br>
+Please don’t...<br>
+Don’t look me in the eye...<br>
+It’s the path to all souls and my soul<br>
+…my soul is an abyss…steadily searching for people to be dragged into this<br><br>
+My eye…
+And if you think your soul is awash enough for this then go ahead and look at me<br>
+Look at me and become perplexed by what you see<br>
+Their dark brown not black…my pupils that is<br>
+You’d notice if you looked closely <br>
+But keep your focus on the right one, I don’t want you to see what’s left of me<br><br>
+
+My hair…<br>
+I got scared so I grew my hair.<br>
+My hair and my eye…<br>
+And I grew them till they covered my eyes.<br>
+And it’s ironic, but I covered my eyes to stop myself from being seen.<br>
+I covered my eyes with my hair so no one could tell what I really mean.<br>
+So no one could tell where I’m going or where I’ve been.<br>
+And so I hid from the world in plain sight.<br>
+A star in the morning’s light. <br>
+A shadow at night.<br><br>
+
+And all these I did just so no one knows what I’m about.<br>
+Just so no one can see what’s inside and only what’s out.<br>
+Just so no one can see through me and turn me inside out.<br>
+Just so no one can read the writings on my forehead but only guess <br>
+  who I am by the words I put on paper or the ones I arranged and shot through my mouth.<br><br>
+
+Clever isn’t it…I thought to myself.<br>
+I have succeeded in deceiving everyone…myself included.<br>
+I have excluded myself from the truth and am now secluded<br>
+and I have lived my life with intentions that were never intended.<br>
+having paid the full mortgage on a life I once rented.<br>
+having fallen into the same hole I thought I had eluded.<br>
+My hair and my eye…<br>
+Why?<br>
+Why have you let me live a lie?
+
+
+
 </div>
+
+<div class="comment-section">
+  <form action="{{url_for('poem6')}}" method="post">
+    <input class="comm" name="comm" placeholder="DROP A COMMENT...">
+    <button type="submit" class="comm">SEND</button>
+  </form>
 </div>
 <section id="beneath-home">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <button type="button" name="button" class="bottom-button"><a href="{{url_for('poems')}}">...read a poem?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...read a poem?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="{{url_for('chapters')}}">...continue on my novel: the denims?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...continue on my novel: the denims?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="{{url_for('articles')}}">...or maybe read an artcile?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...or maybe read an artcile?</a></button>
     </div>
     <div class="carousel-item">
-      <button type="button" name="button" class="bottom-button"><a href="{{url_for('stories')}}">...perhaps in the mood for some short stories?</a></button>
+      <button type="button" name="button" class="bottom-button"><a href="www.google.com">...perhaps in the mood for some short stories?</a></button>
     </div>
     <div class="carousel-item subscribe">
       <button type="button" name="button" class="bottom-button"><a href="{{url_for('subscribe')}}">...or maybe subscribe to my newsletter to stay updated</a></button>
@@ -162,8 +157,9 @@ I, once the head, have been brought down on my knees.<br>
 </div>
 </section>
 
-
+<script type="text/javascript" src="myscripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
   </body>
 </html>
